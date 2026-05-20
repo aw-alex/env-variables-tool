@@ -1,0 +1,22 @@
+{
+  "name": "env-variables-tool",
+  "version": "0.1.0",
+  "description": "OpenTUI/Bun CLI for extracting NEXT_PUBLIC environment variables from raw terminal logs.",
+  "type": "module",
+  "bin": {
+    "envariables": "./src/cli.ts"
+  },
+  "scripts": {
+    "start": "bun src/cli.ts",
+    "test": "bun test",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@opentui/core": "^0.2.10",
+    "clipboardy": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.1.6",
+    "typescript": "^5.5.3"
+  }
+}
